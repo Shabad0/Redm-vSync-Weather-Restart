@@ -4,6 +4,8 @@ This script of vSync was orginaly created by Vespura
 
 Server restarts need to be setup in txadmin
 
+please remove any other weather sync script you might be running could cause issues with this script 
+
 ---------------------------------
 ---EDITED BY JOE MAMA MODIFED BY SHABADO TO FIT REDM
 -----WILL CHANGE WEATHER AT THE 30, 10 AND 5 MINUTE MARK...
