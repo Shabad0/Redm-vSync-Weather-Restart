@@ -372,24 +372,29 @@ AddEventHandler('txAdmin:events:scheduledRestart', function(eventData)
     if eventData.secondsRemaining == 1800 then
                 print("30 Mins till Storm")
             TriggerEvent('vSync:ChangeWeather',"OVERCASTDARK",false)
-            end
-        end)
-
+        TriggerClientEvent("vorp:TipBottom", -1, "Those are some nasty clouds. 30 MINS TILL RESTART", 9000)
+		Citizen.Wait(9000)
+        end
+    end)
 --------------10MINS TILL RESTART-------------
 AddEventHandler('txAdmin:events:scheduledRestart', function(eventData)
     if eventData.secondsRemaining == 600 then
                 print("10 Mins till Storm")
             TriggerEvent('vSync:ChangeWeather',"HURRICANE",false)
-            end
-        end)
+        TriggerClientEvent("vorp:TipBottom", -1, "Wow this wind is getting crazy. 10 MINS TILL RESTART", 9000)
+		Citizen.Wait(9000)
+        end
+    end)
 
 --------------5MIN TILL RESTART-------------
 AddEventHandler('txAdmin:events:scheduledRestart', function(eventData)
     if eventData.secondsRemaining == 300 then
                 print("5 Min till Storm")
             TriggerEvent('vSync:ChangeWeather',"THUNDERSTORM",false)
-            end
-        end)
+        TriggerClientEvent("vorp:TipBottom", -1, "This Weather is getting bad i better take shelter. 5MIN TILL RESTART", 9000)
+		Citizen.Wait(9000)
+        end
+    end)
 
 
 print("$$")
